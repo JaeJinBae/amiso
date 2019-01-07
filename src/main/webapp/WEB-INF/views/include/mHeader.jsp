@@ -10,7 +10,7 @@
 		border-bottom:1px solid lightgray;
 	}
 	.mTopInfo{
-		background: pink;
+		background: #f1f1f1;
 		padding:5px 0;
 		margin-bottom:5px;
 	}
@@ -39,7 +39,7 @@
 	    z-index: 1; /* Stay on top */
 	    top: 0; /* Stay at the top */
 	    right: -250px;
-	    background: pink;
+	    background: #fefefe;
 	    overflow-x: hidden; /* Disable horizontal scroll */
 	    padding-top: 40px; /* Place content 60px from the top */
 	    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -171,19 +171,22 @@
 		<hr>
 		<ul class="mainMenu">
 			<li>
-				<p><a href="#section01Div">귀한인연소개</a> <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
+				<p><a href="#section01Div">인사말</a> <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
 			</li>
 			<li>
-				<p><a href="#section02Div">특별함</a> <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
+				<p><a href="#section02Div">핵심전략</a> <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
 			</li>
 			<li>
-				<p><a href="#section03Div">이벤트</a> <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
+				<p><a href="#section03Div">아미소분양역사</a> <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
 			</li>
 			<li>
-				<p><a href="#section04Div">상담문의</a><img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
+				<p><a href="#section04Div">분양안내</a><img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
 			</li>
 			<li>
-				<p><a href="#section05Div">오시는 길</a><img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
+				<p><a href="#section05Div">오시는길</a><img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
+			</li>
+			<li>
+				<p><a href="#section06Div">관심고객등록</a><img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_right.png"></p>
 			</li>
 		</ul>
 		<div class="mCallInfo">

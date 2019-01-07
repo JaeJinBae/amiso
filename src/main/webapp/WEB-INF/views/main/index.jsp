@@ -21,10 +21,15 @@
 	}
 	header{
 		width:100%;
+		position: fixed;
+		top:0;
+		z-index:9;
+		background: #fff;
+		box-shadow: 0 0px 5px 0px gray;
 	}
 	section{
 		width:100%;
-		padding-top:100px;
+		padding-top:115px;
 	}
 	.mainBannerWrap{
 			width:100%;
