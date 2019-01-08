@@ -9,14 +9,6 @@
 		position: relative;
 		border-bottom:1px solid lightgray;
 	}
-	.mTopInfo{
-		background: #f1f1f1;
-		padding:5px 0;
-		margin-bottom:5px;
-	}
-	.mTopInfo > p{
-		font-size:16px;
-	}
 	.mLogo{
 		margin:0 auto;
 	}
@@ -24,13 +16,13 @@
 		width:60px; 
 	}
 	.menuIcon{
-		width:30px;
+		width:50px;
 		position:absolute;
-		top:38px;
+		top:12px;
 		right:20px;
 	}
 	.menuIcon > img{
-		width:40px;
+		width:100%;
 	}
 	.sidenav {
 	    height: 100%; /* 100% Full-height */
@@ -98,7 +90,8 @@
 		border:1px solid lightgray;
 		padding:15px;
 		margin-top:20px;
-		background: #fff;
+		background: url("${pageContext.request.contextPath}/resources/images/mMenuBackground_test.png") no-repeat;
+		background-size:contain;
 	}
 	.mCallInfoTitle{
 		margin-bottom:10px;
@@ -109,7 +102,7 @@
 	}
 	.mCallInfo > h3 > a{
 		font-weight:600;	
-		color: #4c22a3;
+		color: #80a45b;
 		font-size:25px;
 	}
 	.mCallInfo > .secondChild{
@@ -156,9 +149,6 @@
 	});
 </script>
 <div class="mHeaderWrap">
-	<div class="mTopInfo">
-		<p>전화상담 :<a href="tel:053-626-4545">&nbsp; 053-626-4545</a>&nbsp;&nbsp;|&nbsp;&nbsp; 카카오상담 :&nbsp;@두번째인연</p>
-	</div>
 	<a class="mLogo" href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/images/logo.png"></a>
 	<p class="menuIcon" onclick="openNav()"><img src="${pageContext.request.contextPath}/resources/images/mobileMenu.png"></p>
 	<div class="menuBg"></div>
@@ -191,8 +181,7 @@
 		</ul>
 		<div class="mCallInfo">
 			<h4 class="mCallInfoTitle" id="mCallInfoTitle">상담센터</h4>
-			<h3><a href="tel:053-626-4545">053-626-4545</a></h3>
-			<h5>카카오톡 @두번째인연</h5>
+			<h3><a href="tel:053-626-4545">053-764-1748</a></h3>
 			<h4 class="mCallInfoTitle">방문상담</h4>
 			<h5>AM 09:00<span class="blank"> ~ PM 06:00</span></h5>
 			<h4 class="mCallInfoTitle">전화상담<span class="mSmalltxt">&nbsp;(주말가능)</span></h4>

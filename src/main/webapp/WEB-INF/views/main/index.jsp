@@ -29,6 +29,7 @@
 		box-shadow: 0 0px 5px 0px gray;
 	}
 	section{
+		display:none;
 		width:100%;
 		padding-top:115px;
 	}
