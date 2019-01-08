@@ -29,10 +29,14 @@
 		box-shadow: 0 0px 5px 0px gray;
 	}
 	section{
-		display:none;
 		width:100%;
 		padding-top:115px;
 	}
+	/* 임시 css */
+	section img {
+		width:100%;
+	}
+	/* 임시 css 끝 */
 	.mainBannerWrap{
 			width:100%;
 			height:100%;
