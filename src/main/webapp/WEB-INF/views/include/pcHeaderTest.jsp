@@ -111,6 +111,7 @@
 	.mainHeader{
 		width:1025px;
 		margin:0 auto;
+		padding-bottom:10px;
 		overflow:hidden;
 	}
 	.mainMenu{
@@ -125,10 +126,11 @@
 	}
 	.mainHeaderUl > li{
 		float:left;
-		margin:0 34px;
+		margin:0 33px;
 	}
 	.mainHeaderUl > li > a{
 		font-size:20px;
+		font-weight:600;
 	}
 	.mainHeaderUl > li > a:hover{
 		text-decoration: none;
@@ -157,7 +159,7 @@
 			
 			if(divecieWidth > 1024){
 				$('html, body').animate({
-					scrollTop : $($(this).attr('href')).offset().top - 150
+					scrollTop : $($(this).attr('href')).offset().top - 160
 				}, 500, 'linear'); 
 			}else if(divecieWidth > 767 && divecieWidth < 1025){
 				$('html, body').animate({

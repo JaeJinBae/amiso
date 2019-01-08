@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d380fe42e9ffacfda3ae4b21773d399a&libraries=drawing"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @media only screen and (min-width:320px) and (max-width:767px){
@@ -234,7 +235,7 @@
 	section{
 		width:100%;
 		height:100%;
-		padding-top:150px;
+		padding-top:160px;
 	}
 	.mainBannerWrap{
 		width:100%;
@@ -270,6 +271,37 @@
 		left:0;
 		right:0;
 	}
+	.section02Div{
+		width:100%;
+		height:100%;
+		background: url("${pageContext.request.contextPath}/resources/images/section02_background_test.png") repeat-x;
+		position: relative;
+	}
+	.section02Div > img{
+		position:absolute;
+		/* max-width:80%; */
+		width:80%;
+		margin: auto;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+	.section03Div{
+		width:100%;
+		height:100%;
+		background: #fff;
+		position: relative;
+	}
+	.section03Div > img{
+		position:absolute;
+		width:80%;
+		margin: auto;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
 	.section04Div{
 		width:100%;
 		height:100%;
@@ -284,6 +316,143 @@
 		bottom:0;
 		left:0;
 		right:0;
+	}
+	#map{
+		width:100%;
+		height:50%;
+	}
+	.section05Div > img{
+		width:100%;
+		height:50%;
+	}
+	.section06Div{
+		width:100%;
+		height:100%;
+		background: #fff;
+		position: relative;
+	}
+	.section06Div > img{
+		position:absolute;
+		width:78%;
+		margin: auto;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+	.formWrap{
+		position: absolute; 
+		width:400px;
+		height:550px;
+		right:14%; 
+		margin:auto;
+		top:0;
+		bottom:0;
+		border:4px solid #80a45b;
+	}
+	.formWrap > h1{
+		width:100%;
+		color:#fff;
+		background: #80a45b;
+		text-align: center;
+		padding:10px 0;
+	}
+	#f1{
+		width:100%;
+	}
+	#f1 > table{
+		width:90%;
+		margin:0 auto;
+	}
+	#f1 > table tr{
+		width:100%;
+		height:20px;
+	}
+	#f1 > table tr th{
+		font-size:20px;
+		font-weight: bold;
+		text-align: left;
+		padding:10px;
+		padding-left:20px;
+		width:30%;
+	}
+	#f1 > table tr td >input:not(.chkbox){
+		width:90%;
+		height:20px;
+		font-size:15px;
+	}
+	.chkboxWrap{
+		font-size:18px;
+	}
+	.chkbox{
+		width:15px;
+	}
+	.chkbox:last-child{
+		margin-left:15px;
+	}
+	#f1 > table tr td > textarea{
+		width:90%;
+		height:180px;
+		font-size:15px;
+	}
+	#submitBtn{
+		display:block;
+		width:120px;
+		margin:0 auto;
+		margin-top:30px;
+		padding:5px;
+		font-size:20px;
+		color:#fff;
+		background: #80a45b;
+		border-radius: 5px;
+		border-style: none;
+	}
+	.privacyPolicy{
+		width:100%;
+		margin-top:15px;
+	}
+	.privacyPolicy > p{
+		text-align: right;
+		border-bottom:1px solid gray;
+		padding:10px;
+	}
+	.privacyPolicy > p > span{
+		font-size:17px;
+		cursor:pointer;
+	}
+	.privacyPolicy > p > span:hover{
+		font-weight: bold;
+	}
+	.yakkwan{
+		display:none;
+		background: #fff;
+		padding:15px 10px;
+		position: absolute;
+		top:0;
+		left:0;
+		border:1px solid lightgray;
+	}
+	.privacy_txt{
+		width:95%;
+		height:150px;
+		overflow:scroll;
+		margin:15px auto;
+		border:1px solid gray;
+		padding:10px 5px;
+		font-size:14px;
+	}
+	.privacyCheckBox{
+		font-size:16px;
+		text-align: center;
+		margin-top:10px;
+	}
+	.closeBtn{
+		width:100%;
+		text-align: center;
+	}
+	.closeBtn > span{
+		font-size:15px;
+		cursor: pointer;
 	}
 }
 </style>
@@ -300,35 +469,52 @@
 			autoplaySpeed:4000,
 			dots:true,
 		});
+		
+		/* $('html').on('scroll touchmove mousewheel', function(event) {
+			event.preventDefault();
+			event.stopPropagation(); 
+			return false;
+		}); */
+		
+		$(".yakkwanShowBtn").click(function(){
+			$(".yakkwan").css("display","block");
+		});
+		$(".closeBtn").click(function(){
+			$(".yakkwan").css("display","none");
+		});
+		
+		$("#f1").submit(function(){
+			return false;
+		})
 	});
 </script>
 </head>
-<body id="main">
+<body id="main"><!--  style="overflow-y:hidden" -->
 	<header>
 		<jsp:include page="../include/pcHeaderTest.jsp"></jsp:include>
 	</header>
 	<section>
 		<div class="mainBannerWrap">
 			<div class="mainBanner">
-				<img src="${pageContext.request.contextPath}/resources/images/mainBanner01.jpg">
-				<img src="${pageContext.request.contextPath}/resources/images/mainBanner02.jpg">
-				<img src="${pageContext.request.contextPath}/resources/images/mainBanner03.jpg">
+				<img src="${pageContext.request.contextPath}/resources/images/mainBanner01_test2.jpg">
+				<img src="${pageContext.request.contextPath}/resources/images/mainBanner02_test.jpg">
+				<img src="${pageContext.request.contextPath}/resources/images/mainBanner03_test.jpg">
 			</div>
 		</div><!-- mainBannerWrap end -->
 		<div class="sectionDiv section01Div" id="section01Div"><!-- 인사말 -->
-			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section01.jpg">
+			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section01_test2.jpg">
 			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section01.jpg">
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section01.jpg">
 			
 			<%-- <img class="person" src="${pageContext.request.contextPath}/resources/images/section01Div_img1_test.png"> --%>
 		</div><!-- section01Div end -->
 		<div class="sectionDiv section02Div" id="section02Div"><!-- 핵심전략 -->
-			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section02.jpg">
+			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section02.png">
 			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section02.jpg">
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section02.jpg">
 		</div><!-- section02Div end -->
 		<div class="sectionDiv section03Div" id="section03Div"><!-- 아미소분양역사 -->
-			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section03.jpg">
+			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section03.png">
 			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section03.jpg">
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section03.jpg">
 		</div><!-- section03Div end -->
@@ -338,14 +524,109 @@
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section04.jpg">
 		</div><!-- section04Div end -->
 		<div class="sectionDiv section05Div" id="section05Div"><!-- 오시는길 -->
+			<div id="map" style="width:100%;height:50%;"></div>
+			<script>
+				var container = document.getElementById('map');
+				var options = {
+					center: new daum.maps.LatLng(35.857336, 128.648319),
+					level: 2
+				};
+		
+				var map = new daum.maps.Map(container, options);
+				
+				// 마커가 표시될 위치입니다 
+				var markerPosition  = new daum.maps.LatLng(35.857336, 128.648319); 
+
+				// 마커를 생성합니다
+				var marker = new daum.maps.Marker({
+				    position: markerPosition
+				});
+
+				// 마커가 지도 위에 표시되도록 설정합니다
+				marker.setMap(map);
+				
+				// 마커에 커서가 오버됐을 때 마커 위에 표시할 인포윈도우를 생성합니다.
+				var iwContent = '<div style="padding-left:45px; padding-top:2px; color:#548537; font-size:15px; font-weight:bold;">아미소(주)</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+
+				// 인포윈도우를 생성합니다
+				var infowindow = new daum.maps.InfoWindow({
+				    content : iwContent
+				});
+
+				// 마커에 마우스오버 이벤트를 등록합니다
+				daum.maps.event.addListener(marker, 'mouseover', function() {
+				  // 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
+				    infowindow.open(map, marker);
+				});
+
+				// 마커에 마우스아웃 이벤트를 등록합니다
+				daum.maps.event.addListener(marker, 'mouseout', function() {
+				    // 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
+				    infowindow.close();
+				});
+				
+				//마커 누르면 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
+				daum.maps.event.addListener(marker, 'click', function() {
+				  	// 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
+				    infowindow.open(map, marker);
+				});
+				
+				// 마커 외 영역 누르면 이벤트를 등록합니다
+				daum.maps.event.addListener(map, 'click', function() {
+				    // 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
+				    infowindow.close();
+				});
+			</script>
 			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section05.jpg">
 			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section05.jpg">
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section05.jpg">
 		</div><!-- section05Div end -->
 		<div class="sectionDiv section06Div" id="section06Div"><!-- 관심고객등록 -->
-			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section06.jpg">
+			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section06.png">
 			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section06.jpg">
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section06.jpg">
+			<div class="formWrap">
+				<h1>관심고객등록</h1>
+				<form id="f1">
+					<table>
+						<tr>
+							<th>이름</th>
+							<td><input type="text" name="name"></td>
+						</tr>
+						<tr>
+							<th>연락처</th>
+							<td><input type="text" name="call"></td>
+						</tr>
+						<tr>
+							<th>연락방법</th>
+							<td class="chkboxWrap"><input class="chkbox" type="checkbox" name="callType" value="문자">문자 <input class="chkbox" type="checkbox" name="callType" value="전화">전화</td>
+						</tr>
+						<tr>
+							<th>문의내용</th>
+							<td><textarea name="content"></textarea></td>
+						</tr>
+					</table>
+					<div class="privacyPolicy">
+						<p><span class="yakkwanShowBtn">약관보기</span></p>
+						<div class="privacyCheckBox">
+							<input type="checkbox" name="privacy">개인정보수집 및 이용 동의 &nbsp;
+							<input type="checkbox" name="agreement">개인정보 제공 동의
+						</div>
+					</div>
+					<input id="submitBtn" type="submit" value="관심고객신청">
+				</form>
+				<div class="yakkwan">
+					<h4>개인정보의 제공에 관한 사항 동의</h4>
+					<div class="privacy_txt">
+						<jsp:include page="../privacy_txt2.jsp"></jsp:include>
+					</div>
+					<h4>개인정보 수집 및 이용안내 동의</h4>
+					<div class="privacy_txt">
+						<jsp:include page="../privacy_txt.jsp"></jsp:include>
+					</div>
+					<p class="closeBtn"><span>[ 닫기 ]</span></p>
+				</div><!-- yakkwan end -->
+			</div><!-- formWrap -->
 		</div><!-- section06Div end -->
 	</section>
 </body>
