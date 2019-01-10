@@ -162,7 +162,7 @@
 				$('html, body').animate({
 					scrollTop : $($(this).attr('href')).offset().top - 160
 				}, 500, 'linear'); 
-			}else if(divecieWidth > 767 && divecieWidth < 1025){
+			}else if(divecieWidth > 767 && divecieWidth <= 1024){
 				$('html, body').animate({
 					scrollTop : $($(this).attr('href')).offset().top - 125
 				}, 500, 'linear');

@@ -90,74 +90,7 @@
 }
 @media only screen and (min-width:768px) and (max-width:1024px){
 	@media only screen and (orientation:portrait){
-		.tablet_img, .mobile_img{
-			display:none;
-		}
-		header{
-			width:100%;
-			position: fixed;
-			top:0;
-			z-index:9;
-			background: #fff;
-			box-shadow: 0 0px 5px 0px gray;
-		}
-		section{
-			width:100%;
-			/* height:100%; */
-			padding-top:125px;
-		}
-		.mainBannerWrap{
-			width:100%;
-			height:100%;
-		}
-		.mainBanner{
-			width:100%;
-			height:100%;
-		}
-		.mainBanner div{
-			height:100%;
-		}
-		.mainBanner div img{
-			width:100%;
-			height:100%;
-		}
-		.sectionDiv{
-			width:100%;
-			height:100%;
-		}
-		.section01Div{
-			width:100%;
-			height:100%;
-			position: relative;
-		}
-		.section01Div > img{
-			width:100%;
-			/*position:absolute;
-			width:80%;
-			margin: auto;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0; */
-		}
-		.section04Div{
-			width:100%;
-			height:100%;
-			background: #eaeaea;
-			position: relative;
-		}
-		.section04Div > img{
-			width:100%;
-			/* position:absolute;
-			width:80%;
-			margin: auto;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0; */
-		}
-	}
-	@media only screen and (orientation:landscape){
+		input,button {border-radius:0;-webkit-appearance:none}
 		.tablet_img, .mobile_img{
 			display:none;
 		}
@@ -208,6 +141,38 @@
 			left:0;
 			right:0;
 		}
+		.section02Div{
+			width:100%;
+			height:100%;
+			background: url("${pageContext.request.contextPath}/resources/images/section02_background_test.png") repeat-x;
+			position: relative;
+		}
+		.section02Div > img{
+			position:absolute;
+			/* max-width:80%; */
+			width:80%;
+			margin: auto;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.section03Div{
+			width:100%;
+			height:100%;
+			background: url("${pageContext.request.contextPath}/resources/images/pc_section03_background.jpg") no-repeat;
+			background-size:cover;
+			position: relative;
+		}
+		.section03Div > img{
+			position:absolute;
+			width:80%;
+			margin: auto;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
 		.section04Div{
 			width:100%;
 			height:100%;
@@ -222,6 +187,394 @@
 			bottom:0;
 			left:0;
 			right:0;
+		}
+		#map{
+			width:100%;
+			height:50%;
+		}
+		.section05Div > img{
+			width:100%;
+			height:50%;
+		}
+		.section06Div{
+			width:100%;
+			height:100%;
+			background: #fff;
+			position: relative;
+		}
+		.section06Div > img{
+			/* position:absolute; */
+			width:78%;
+			margin: auto;
+			/* top:0;
+			bottom:0;
+			left:0;
+			right:0; */ 
+		}
+		.formWrap{
+			/* position: absolute; */ 
+			width:400px;
+			height:580px;
+			/* right:14%; */ 
+			margin:0 auto;
+			/* top:0;
+			bottom:0; */
+			border:4px solid #80a45b;
+			background:#fff;
+			position: relative;
+		}
+		.formWrap > h1{
+			width:100%;
+			color:#fff;
+			background: #80a45b;
+			text-align: center;
+			padding:10px 0;
+			font-size:33px;
+		}
+		#f1{
+			width:100%;
+		}
+		#f1 > table{
+			width:100%;
+			margin:0 auto;
+		}
+		#f1 > table tr{
+			width:100%;
+			height:20px;
+			border-bottom:1px solid lightgray;
+		}
+		#f1 > table tr th{
+			font-size:20px;
+			font-weight: bold;
+			text-align: left;
+			padding:10px;
+			padding-left:20px;
+			width:30%; 
+			background: #fafafa;
+		}
+		#f1 > table tr td{
+			padding:10px;
+		}
+		#f1 > table tr td >input:not(.chkbox){
+			width:90%;
+			height:20px;
+			font-size:15px; 
+		}
+		.chkboxWrap{
+			font-size:18px;
+		}
+		.chkbox{
+			width:15px;
+		}
+		.chkbox:last-child{
+			margin-left:15px;
+		}
+		#f1 > table tr td > textarea{
+			width:90%;
+			height:180px;
+			font-size:15px;
+		}
+		#submitBtn{
+			display:block;
+			width:120px;
+			margin:0 auto;
+			margin-top:20px;
+			padding:5px;
+			font-size:20px;
+			color:#fff;
+			background: #80a45b;
+			border-radius: 5px;
+			border-style: none;
+		}
+		.privacyPolicy{
+			width:100%;
+			margin-top:15px;
+		}
+		.privacyPolicy > p{
+			text-align: right;
+			border-bottom:1px solid gray;
+			padding:10px;
+		}
+		.privacyPolicy > p > span{
+			font-size:17px;
+			cursor:pointer;
+		}
+		.privacyPolicy > p > span:hover{
+			font-weight: bold;
+		}
+		.yakkwan{
+			display:none;
+			background: #fff;
+			padding:15px 10px;
+			position: absolute;
+			top:0;
+			left:0;
+			border:1px solid lightgray;
+		}
+		.privacy_txt{
+			width:95%;
+			height:150px;
+			overflow:scroll;
+			margin:15px auto;
+			border:1px solid gray;
+			padding:10px 5px;
+			font-size:14px;
+		}
+		.privacyCheckBox{
+			font-size:16px;
+			text-align: center;
+			margin-top:10px;
+		}
+		.closeBtn{
+			width:100%;
+			text-align: center;
+		}
+		.closeBtn > span{
+			font-size:15px;
+			cursor: pointer;
+		}
+	}
+	@media only screen and (orientation:landscape){
+		input,button {border-radius:0;-webkit-appearance:none}
+		.tablet_img, .mobile_img{
+			display:none;
+		}
+		header{
+			width:100%;
+			position: fixed;
+			top:0;
+			z-index:9;
+			background: #fff;
+			box-shadow: 0 0px 5px 0px gray;
+		}
+		section{
+			width:100%;
+			height:100%;
+			padding-top:125px;
+		}
+		.mainBannerWrap{
+			width:100%;
+			height:100%;
+		}
+		.mainBanner{
+			width:100%;
+			height:100%;
+		}
+		.mainBanner div{
+			height:100%;
+		}
+		.mainBanner div img{
+			width:100%;
+			height:100%;
+		}
+		.sectionDiv{
+			width:100%;
+			height:100%;
+		}
+		.section01Div{
+			width:100%;
+			height:100%;
+			position: relative;
+		}
+		.section01Div > img{
+			position:absolute;
+			/* max-width:80%; */
+			width:80%;
+			margin: auto;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.section02Div{
+			width:100%;
+			height:100%;
+			background: url("${pageContext.request.contextPath}/resources/images/section02_background_test.png") repeat-x;
+			position: relative;
+		}
+		.section02Div > img{
+			position:absolute;
+			/* max-width:80%; */
+			width:80%;
+			margin: auto;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.section03Div{
+			width:100%;
+			height:100%;
+			background: url("${pageContext.request.contextPath}/resources/images/pc_section03_background.jpg") no-repeat;
+			background-size:cover;
+			position: relative;
+		}
+		.section03Div > img{
+			position:absolute;
+			width:80%;
+			margin: auto;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.section04Div{
+			width:100%;
+			height:100%;
+			background: #eaeaea;
+			position: relative;
+		}
+		.section04Div > img{
+			position:absolute;
+			width:80%;
+			margin: auto;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		#map{
+			width:100%;
+			height:50%;
+		}
+		.section05Div > img{
+			width:100%;
+			height:50%;
+		}
+		.section06Div{
+			width:100%;
+			height:100%;
+			background: #fff;
+			position: relative;
+		}
+		.section06Div > img{
+			position:absolute;
+			width:78%;
+			margin: auto;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.formWrap{
+			position: absolute; 
+			width:400px;
+			height:500px;
+			right:14%; 
+			margin:auto;
+			top:0;
+			bottom:0;
+			border:4px solid #80a45b;
+		}
+		.formWrap > h1{
+			width:100%;
+			color:#fff;
+			background: #80a45b;
+			text-align: center;
+			padding:10px 0;
+			font-size:30px;
+		}
+		#f1{
+			width:100%;
+		}
+		#f1 > table{
+			width:100%;
+			margin:0 auto;
+		}
+		#f1 > table tr{
+			width:100%;
+			height:20px;
+			border-bottom:1px solid lightgray;
+		}
+		#f1 > table tr th{
+			font-size:18px;
+			font-weight: bold;
+			text-align: left;
+			padding:5px 10px;
+			padding-left:20px;
+			width:30%; 
+			background: #f1f1f1;
+		}
+		#f1 > table tr td{
+			padding:5px 10px;
+		}
+		#f1 > table tr td >input:not(.chkbox){
+			width:90%;
+			height:20px;
+			font-size:15px; 
+		}
+		.chkboxWrap{
+			font-size:18px;
+		}
+		.chkbox{
+			width:15px;
+		}
+		.chkbox:last-child{
+			margin-left:15px;
+		}
+		#f1 > table tr td > textarea{
+			width:90%;
+			height:180px;
+			font-size:15px;
+		}
+		#submitBtn{
+			display:block;
+			width:120px;
+			margin:0 auto;
+			margin-top:20px;
+			padding:5px;
+			font-size:20px;
+			color:#fff;
+			background: #80a45b;
+			border-radius: 5px;
+			border-style: none;
+		}
+		.privacyPolicy{
+			width:100%;
+			margin-top:8px;
+		}
+		.privacyPolicy > p{
+			text-align: right;
+			border-bottom:1px solid gray;
+			padding:10px;
+		}
+		.privacyPolicy > p > span{
+			font-size:17px;
+			cursor:pointer;
+		}
+		.privacyPolicy > p > span:hover{
+			font-weight: bold;
+		}
+		.yakkwan{
+			display:none;
+			background: #fff;
+			padding:15px 10px;
+			position: absolute;
+			top:0;
+			left:0;
+			border:1px solid lightgray;
+		}
+		.privacy_txt{
+			width:95%;
+			height:150px;
+			overflow:scroll;
+			margin:15px auto;
+			border:1px solid gray;
+			padding:10px 5px;
+			font-size:14px;
+		}
+		.privacyCheckBox{
+			font-size:16px;
+			text-align: center;
+			margin-top:10px;
+		}
+		.closeBtn{
+			width:100%;
+			text-align: center;
+		}
+		.closeBtn > span{
+			font-size:15px;
+			cursor: pointer;
 		}
 	}
 }
