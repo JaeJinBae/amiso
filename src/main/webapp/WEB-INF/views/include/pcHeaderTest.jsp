@@ -40,7 +40,7 @@
 		}
 		.mainHeaderUl > li > a:hover{
 			text-decoration: none;
-			color: #548537; /*마우스오버시 자연스럽게*/
+			color: #f3a75c;
 			font-weight:bold;
 			transition-duration: 300ms;
 			transition-property: color, border-color, background-color, font-weight;
@@ -134,7 +134,7 @@
 	}
 	.mainHeaderUl > li > a:hover{
 		text-decoration: none;
-		color: #548537; /*마우스오버시 자연스럽게*/
+		color: #ff8561 !important;
 		font-weight:bold;
 		transition-duration: 300ms;
 		transition-property: color, border-color, background-color, font-weight;
@@ -154,7 +154,8 @@
 	$(function(){
 		$(".mainHeaderUl > li > a").click(function(e) {
 			e.preventDefault();
-			
+			$(".mainHeaderUl > li > a").css("color","#5c5c5c");
+			$(this).css("color","#ff8561");
 			var divecieWidth=$(document).width();
 			
 			if(divecieWidth > 1024){

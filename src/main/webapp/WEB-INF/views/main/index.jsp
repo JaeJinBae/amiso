@@ -295,7 +295,8 @@
 	.section03Div{
 		width:100%;
 		height:100%;
-		background: #fff;
+		background: url("${pageContext.request.contextPath}/resources/images/pc_section03_background.jpg") no-repeat;
+		background-size:cover;
 		position: relative;
 	}
 	.section03Div > img{
@@ -366,12 +367,13 @@
 		width:100%;
 	}
 	#f1 > table{
-		width:90%;
+		width:100%;
 		margin:0 auto;
 	}
 	#f1 > table tr{
 		width:100%;
 		height:20px;
+		border-bottom:1px solid lightgray;
 	}
 	#f1 > table tr th{
 		font-size:20px;
@@ -379,12 +381,16 @@
 		text-align: left;
 		padding:10px;
 		padding-left:20px;
-		width:30%;
+		width:30%; 
+		background: #f1f1f1;
+	}
+	#f1 > table tr td{
+		padding:10px;
 	}
 	#f1 > table tr td >input:not(.chkbox){
 		width:90%;
 		height:20px;
-		font-size:15px;
+		font-size:15px; 
 	}
 	.chkboxWrap{
 		font-size:18px;
@@ -404,7 +410,7 @@
 		display:block;
 		width:120px;
 		margin:0 auto;
-		margin-top:30px;
+		margin-top:20px;
 		padding:5px;
 		font-size:20px;
 		color:#fff;
@@ -489,6 +495,7 @@
 		});
 		
 		$("#f1").submit(function(){
+			alert("click");
 			return false;
 		})
 	});
@@ -502,12 +509,12 @@
 		<div class="mainBannerWrap">
 			<div class="mainBanner">
 				<img src="${pageContext.request.contextPath}/resources/images/mainBanner01_test2.jpg">
-				<img src="${pageContext.request.contextPath}/resources/images/mainBanner02_test.jpg">
-				<img src="${pageContext.request.contextPath}/resources/images/mainBanner03_test.jpg">
+				<img src="${pageContext.request.contextPath}/resources/images/mainBanner02_test2.jpg">
+				<img src="${pageContext.request.contextPath}/resources/images/mainBanner03_test2.jpg">
 			</div>
 		</div><!-- mainBannerWrap end -->
 		<div class="sectionDiv section01Div" id="section01Div"><!-- 인사말 -->
-			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section01_test2.jpg">
+			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section01_test.jpg">
 			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section01.jpg">
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section01.jpg">
 			
@@ -592,7 +599,7 @@
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section06.jpg">
 			<div class="formWrap">
 				<h1>관심고객등록</h1>
-				<form id="f1">
+				<form id="f1" method="post" action="sendMail">
 					<table>
 						<tr>
 							<th>이름</th>
