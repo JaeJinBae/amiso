@@ -17,7 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @media only screen and (min-width:320px) and (max-width:767px){
-	.tablet_img, .mobile_img{
+	.tablet_img, .pc_img{
 		display:none;
 	}
 	header{
@@ -869,7 +869,7 @@
 		<div class="sectionDiv section01Div" id="section01Div"><!-- 인사말 -->
 			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section01_test.jpg">
 			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section01.jpg">
-			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section01.jpg">
+			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/test.jpg">
 			
 			<%-- <img class="person" src="${pageContext.request.contextPath}/resources/images/section01Div_img1_test.png"> --%>
 		</div><!-- section01Div end -->
