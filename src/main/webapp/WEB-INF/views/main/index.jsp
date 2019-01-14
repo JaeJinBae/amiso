@@ -30,13 +30,8 @@
 	}
 	section{
 		width:100%;
-		padding-top:115px;
+		padding-top:80px;
 	}
-	/* 임시 css */
-	section img {
-		width:100%;
-	}
-	/* 임시 css 끝 */
 	.mainBannerWrap{
 			width:100%;
 			height:100%;
@@ -54,174 +49,60 @@
 		}
 		.sectionDiv{
 			width:100%;
-			height:100%;
 		}
 		.section01Div{
 			width:100%;
-			height:100%;
-			position: relative;
 		}
 		.section01Div > img{
 			width:100%;
-			/*position:absolute;
-			width:80%;
-			margin: auto;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0; */
-		}
-		.section04Div{
-			width:100%;
-			height:100%;
-			background: #eaeaea;
-			position: relative;
-		}
-		.section04Div > img{
-			width:100%;
-			/* position:absolute;
-			width:80%;
-			margin: auto;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0; */
-		}
-}
-@media only screen and (min-width:768px) and (max-width:1024px){
-	@media only screen and (orientation:portrait){
-		input,button {border-radius:0;-webkit-appearance:none}
-		.tablet_img, .mobile_img{
-			display:none;
-		}
-		header{
-			width:100%;
-			position: fixed;
-			top:0;
-			z-index:9;
-			background: #fff;
-			box-shadow: 0 0px 5px 0px gray;
-		}
-		section{
-			width:100%;
-			height:100%;
-			padding-top:125px;
-		}
-		.mainBannerWrap{
-			width:100%;
-			height:100%;
-		}
-		.mainBanner{
-			width:100%;
-			height:100%;
-		}
-		.mainBanner div{
-			height:100%;
-		}
-		.mainBanner div img{
-			width:100%;
-			height:100%;
-		}
-		.sectionDiv{
-			width:100%;
-			height:100%;
-		}
-		.section01Div{
-			width:100%;
-			height:100%;
-			position: relative;
-		}
-		.section01Div > img{
-			position:absolute;
-			/* max-width:80%; */
-			width:80%;
-			margin: auto;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0;
 		}
 		.section02Div{
 			width:100%;
-			height:100%;
-			background: url("${pageContext.request.contextPath}/resources/images/section02_background_test.png") repeat-x;
-			position: relative;
 		}
 		.section02Div > img{
-			position:absolute;
-			/* max-width:80%; */
-			width:80%;
-			margin: auto;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0;
+			width:100%;
 		}
 		.section03Div{
 			width:100%;
-			height:100%;
 			background: url("${pageContext.request.contextPath}/resources/images/pc_section03_background.jpg") no-repeat;
 			background-size:cover;
-			position: relative;
 		}
 		.section03Div > img{
-			position:absolute;
-			width:80%;
-			margin: auto;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0;
+			width:100%;
 		}
 		.section04Div{
 			width:100%;
-			height:100%;
 			background: #eaeaea;
-			position: relative;
 		}
 		.section04Div > img{
-			position:absolute;
-			width:80%;
-			margin: auto;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0;
+			width:100%;
+		}
+		.section05Div{
+			width:100%;
 		}
 		#map{
 			width:100%;
-			height:50%;
+			height:350px !important;
 		}
 		.section05Div > img{
 			width:100%;
-			height:50%;
 		}
 		.section06Div{
 			width:100%;
-			height:100%;
-			background: #fff;
-			position: relative;
+			background: url("${pageContext.request.contextPath}/resources/images/tablet_section06_background.jpg") no-repeat;
+			background-size: cover;
 		}
 		.section06Div > img{
-			/* position:absolute; */
-			width:78%;
-			margin: auto;
-			/* top:0;
-			bottom:0;
-			left:0;
-			right:0; */ 
+			width:100%;
 		}
 		.formWrap{
-			/* position: absolute; */ 
-			width:400px;
-			height:580px;
-			/* right:14%; */ 
+			width:95%;
+			height:580px; 
 			margin:0 auto;
-			/* top:0;
-			bottom:0; */
 			border:4px solid #80a45b;
 			background:#fff;
 			position: relative;
+			margin-bottom:10px;
 		}
 		.formWrap > h1{
 			width:100%;
@@ -333,6 +214,216 @@
 			font-size:15px;
 			cursor: pointer;
 		}
+		.footer{
+			width:100%;
+			background: #3e3e3e;
+		}
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+	@media only screen and (orientation:portrait){
+		input,button {border-radius:0;-webkit-appearance:none}
+		.pc_img, .mobile_img{
+			display:none;
+		}
+		header{
+			width:100%;
+			position: fixed;
+			top:0;
+			z-index:9;
+			background: #fff;
+			box-shadow: 0 0px 5px 0px gray;
+		}
+		section{
+			width:100%;
+			height:100%;
+			padding-top:125px;
+		}
+		.mainBannerWrap{
+			width:100%;
+			height:100%;
+		}
+		.mainBanner{
+			width:100%;
+			height:100%;
+		}
+		.mainBanner div{
+			height:100%;
+		}
+		.mainBanner div img{
+			width:100%;
+			height:100%;
+		}
+		.sectionDiv{
+			width:100%;
+		}
+		.section01Div{
+			width:100%;
+		}
+		.section01Div > img{
+			width:100%;
+		}
+		.section02Div{
+			width:100%;
+		}
+		.section02Div > img{
+			width:100%;
+		}
+		.section03Div{
+			width:100%;
+			background: url("${pageContext.request.contextPath}/resources/images/pc_section03_background.jpg") no-repeat;
+			background-size:cover;
+		}
+		.section03Div > img{
+			width:100%;
+		}
+		.section04Div{
+			width:100%;
+			background: #eaeaea;
+		}
+		.section04Div > img{
+			width:100%;
+		}
+		.section05Div{
+			width:100%;
+		}
+		#map{
+			width:100%;
+			height:350px !important;
+		}
+		.section05Div > img{
+			width:100%;
+		}
+		.section06Div{
+			width:100%;
+			background: url("${pageContext.request.contextPath}/resources/images/tablet_section06_background.jpg") no-repeat;
+			background-size: cover;
+		}
+		.section06Div > img{
+			width:100%;
+		}
+		.formWrap{
+			width:400px;
+			height:580px; 
+			margin:0 auto;
+			border:4px solid #80a45b;
+			background:#fff;
+			position: relative;
+			margin-bottom:10px;
+		}
+		.formWrap > h1{
+			width:100%;
+			color:#fff;
+			background: #80a45b;
+			text-align: center;
+			padding:10px 0;
+			font-size:33px;
+		}
+		#f1{
+			width:100%;
+		}
+		#f1 > table{
+			width:100%;
+			margin:0 auto;
+		}
+		#f1 > table tr{
+			width:100%;
+			height:20px;
+			border-bottom:1px solid lightgray;
+		}
+		#f1 > table tr th{
+			font-size:20px;
+			font-weight: bold;
+			text-align: left;
+			padding:10px;
+			padding-left:20px;
+			width:30%; 
+			background: #fafafa;
+		}
+		#f1 > table tr td{
+			padding:10px;
+		}
+		#f1 > table tr td >input:not(.chkbox){
+			width:90%;
+			height:20px;
+			font-size:15px; 
+		}
+		.chkboxWrap{
+			font-size:18px;
+		}
+		.chkbox{
+			width:15px;
+		}
+		.chkbox:last-child{
+			margin-left:15px;
+		}
+		#f1 > table tr td > textarea{
+			width:90%;
+			height:180px;
+			font-size:15px;
+		}
+		#submitBtn{
+			display:block;
+			width:120px;
+			margin:0 auto;
+			margin-top:20px;
+			padding:5px;
+			font-size:20px;
+			color:#fff;
+			background: #80a45b;
+			border-radius: 5px;
+			border-style: none;
+		}
+		.privacyPolicy{
+			width:100%;
+			margin-top:15px;
+		}
+		.privacyPolicy > p{
+			text-align: right;
+			border-bottom:1px solid gray;
+			padding:10px;
+		}
+		.privacyPolicy > p > span{
+			font-size:17px;
+			cursor:pointer;
+		}
+		.privacyPolicy > p > span:hover{
+			font-weight: bold;
+		}
+		.yakkwan{
+			display:none;
+			background: #fff;
+			padding:15px 10px;
+			position: absolute;
+			top:0;
+			left:0;
+			border:1px solid lightgray;
+		}
+		.privacy_txt{
+			width:95%;
+			height:150px;
+			overflow:scroll;
+			margin:15px auto;
+			border:1px solid gray;
+			padding:10px 5px;
+			font-size:14px;
+		}
+		.privacyCheckBox{
+			font-size:16px;
+			text-align: center;
+			margin-top:10px;
+		}
+		.closeBtn{
+			width:100%;
+			text-align: center;
+		}
+		.closeBtn > span{
+			font-size:15px;
+			cursor: pointer;
+		}
+		.footer{
+			width:100%;
+			background: #3e3e3e;
+		}
 	}
 	@media only screen and (orientation:landscape){
 		input,button {border-radius:0;-webkit-appearance:none}
@@ -378,8 +469,7 @@
 		}
 		.section01Div > img{
 			position:absolute;
-			/* max-width:80%; */
-			width:80%;
+			width:95%;
 			margin: auto;
 			top:0;
 			bottom:0;
@@ -394,8 +484,7 @@
 		}
 		.section02Div > img{
 			position:absolute;
-			/* max-width:80%; */
-			width:80%;
+			width:95%;
 			margin: auto;
 			top:0;
 			bottom:0;
@@ -411,7 +500,7 @@
 		}
 		.section03Div > img{
 			position:absolute;
-			width:80%;
+			width:95%;
 			margin: auto;
 			top:0;
 			bottom:0;
@@ -426,7 +515,7 @@
 		}
 		.section04Div > img{
 			position:absolute;
-			width:80%;
+			width:95%;
 			margin: auto;
 			top:0;
 			bottom:0;
@@ -435,11 +524,11 @@
 		}
 		#map{
 			width:100%;
-			height:50%;
+			height:60% !important;
 		}
 		.section05Div > img{
 			width:100%;
-			height:50%;
+			height:40%;
 		}
 		.section06Div{
 			width:100%;
@@ -460,11 +549,12 @@
 			position: absolute; 
 			width:400px;
 			height:500px;
-			right:14%; 
+			right:10%; 
 			margin:auto;
 			top:0;
 			bottom:0;
 			border:4px solid #80a45b;
+			background: #fff;
 		}
 		.formWrap > h1{
 			width:100%;
@@ -576,11 +666,15 @@
 			font-size:15px;
 			cursor: pointer;
 		}
+		.footer{
+			width:100%;
+			background: #3e3e3e;
+		}
 	}
 }
 @media only screen and (min-width:1025px){
 	.tablet_img, .mobile_img{
-		display:none;
+		display:none !important;
 	}
 	header{
 		width:100%;
@@ -818,6 +912,10 @@
 		font-size:15px;
 		cursor: pointer;
 	}
+	.footer{
+		width:100%;
+		background: #3e3e3e;
+	}
 }
 </style>
 <script>
@@ -852,6 +950,8 @@
 			return false;
 		})
 	});
+	
+	
 </script>
 </head>
 <body id="main"><!--  style="overflow-y:hidden" -->
@@ -860,18 +960,26 @@
 	</header>
 	<section>
 		<div class="mainBannerWrap">
-			<div class="mainBanner">
-				<img src="${pageContext.request.contextPath}/resources/images/mainBanner01_test2.jpg">
-				<img src="${pageContext.request.contextPath}/resources/images/mainBanner02_test2.jpg">
-				<img src="${pageContext.request.contextPath}/resources/images/mainBanner03_test2.jpg">
+			<div class="mainBanner pc_img">
+				<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_mainBanner01.jpg">
+				<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_mainBanner02.jpg">
+				<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_mainBanner03.jpg">
+			</div>
+			<div class="mainBanner tablet_img">
+				<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_mainBanner01.jpg">
+				<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_mainBanner02.jpg">
+				<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_mainBanner03.jpg">
+			</div>
+			<div class="mainBanner mobile_img">
+				<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_mainBanner01.jpg">
+				<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_mainBanner02.jpg"> 
+				<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_mainBanner03.jpg">
 			</div>
 		</div><!-- mainBannerWrap end -->
 		<div class="sectionDiv section01Div" id="section01Div"><!-- 인사말 -->
 			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section01_test.jpg">
 			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section01.jpg">
-			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/test.jpg">
-			
-			<%-- <img class="person" src="${pageContext.request.contextPath}/resources/images/section01Div_img1_test.png"> --%>
+			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section01.jpg">
 		</div><!-- section01Div end -->
 		<div class="sectionDiv section02Div" id="section02Div"><!-- 핵심전략 -->
 			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section02.png">
@@ -948,7 +1056,7 @@
 		</div><!-- section05Div end -->
 		<div class="sectionDiv section06Div" id="section06Div"><!-- 관심고객등록 -->
 			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section06.png">
-			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section06.jpg">
+			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section06.png">
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section06.jpg">
 			<div class="formWrap">
 				<h1>관심고객등록</h1>
@@ -993,6 +1101,9 @@
 				</div><!-- yakkwan end -->
 			</div><!-- formWrap -->
 		</div><!-- section06Div end -->
+		<div class="footer">
+			<jsp:include page="../include/footer.jsp"></jsp:include>
+		</div>
 	</section>
 </body>
 </html>
