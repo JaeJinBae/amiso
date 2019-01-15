@@ -143,7 +143,7 @@
 		$(".mainMenu > li > p > a").click(function(){
 			closeNav();
 			$('html, body').animate({
-				scrollTop : $($(this).attr('href')).offset().top - 100
+				scrollTop : $($(this).attr('href')).offset().top - 80
 			}, 500, 'linear');
 		});
 	});

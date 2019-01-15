@@ -33,191 +33,203 @@
 		padding-top:80px;
 	}
 	.mainBannerWrap{
-			width:100%;
-			height:100%;
-		}
-		.mainBanner{
-			width:100%;
-			height:100%;
-		}
-		.mainBanner div{
-			height:100%;
-		}
-		.mainBanner div img{
-			width:100%;
-			height:100%;
-		}
-		.sectionDiv{
-			width:100%;
-		}
-		.section01Div{
-			width:100%;
-		}
-		.section01Div > img{
-			width:100%;
-		}
-		.section02Div{
-			width:100%;
-		}
-		.section02Div > img{
-			width:100%;
-		}
-		.section03Div{
-			width:100%;
-			background: url("${pageContext.request.contextPath}/resources/images/pc_section03_background.jpg") no-repeat;
-			background-size:cover;
-		}
-		.section03Div > img{
-			width:100%;
-		}
-		.section04Div{
-			width:100%;
-			background: #eaeaea;
-		}
-		.section04Div > img{
-			width:100%;
-		}
-		.section05Div{
-			width:100%;
-		}
-		#map{
-			width:100%;
-			height:350px !important;
-		}
-		.section05Div > img{
-			width:100%;
-		}
-		.section06Div{
-			width:100%;
-			background: url("${pageContext.request.contextPath}/resources/images/tablet_section06_background.jpg") no-repeat;
-			background-size: cover;
-		}
-		.section06Div > img{
-			width:100%;
-		}
-		.formWrap{
-			width:95%;
-			height:580px; 
-			margin:0 auto;
-			border:4px solid #80a45b;
-			background:#fff;
-			position: relative;
-			margin-bottom:10px;
-		}
-		.formWrap > h1{
-			width:100%;
-			color:#fff;
-			background: #80a45b;
-			text-align: center;
-			padding:10px 0;
-			font-size:33px;
-		}
-		#f1{
-			width:100%;
-		}
-		#f1 > table{
-			width:100%;
-			margin:0 auto;
-		}
-		#f1 > table tr{
-			width:100%;
-			height:20px;
-			border-bottom:1px solid lightgray;
-		}
-		#f1 > table tr th{
-			font-size:20px;
-			font-weight: bold;
-			text-align: left;
-			padding:10px;
-			padding-left:20px;
-			width:30%; 
-			background: #fafafa;
-		}
-		#f1 > table tr td{
-			padding:10px;
-		}
-		#f1 > table tr td >input:not(.chkbox){
-			width:90%;
-			height:20px;
-			font-size:15px; 
-		}
-		.chkboxWrap{
-			font-size:18px;
-		}
-		.chkbox{
-			width:15px;
-		}
-		.chkbox:last-child{
-			margin-left:15px;
-		}
-		#f1 > table tr td > textarea{
-			width:90%;
-			height:180px;
-			font-size:15px;
-		}
-		#submitBtn{
-			display:block;
-			width:120px;
-			margin:0 auto;
-			margin-top:20px;
-			padding:5px;
-			font-size:20px;
-			color:#fff;
-			background: #80a45b;
-			border-radius: 5px;
-			border-style: none;
-		}
-		.privacyPolicy{
-			width:100%;
-			margin-top:15px;
-		}
-		.privacyPolicy > p{
-			text-align: right;
-			border-bottom:1px solid gray;
-			padding:10px;
-		}
-		.privacyPolicy > p > span{
-			font-size:17px;
-			cursor:pointer;
-		}
-		.privacyPolicy > p > span:hover{
-			font-weight: bold;
-		}
-		.yakkwan{
-			display:none;
-			background: #fff;
-			padding:15px 10px;
-			position: absolute;
-			top:0;
-			left:0;
-			border:1px solid lightgray;
-		}
-		.privacy_txt{
-			width:95%;
-			height:150px;
-			overflow:scroll;
-			margin:15px auto;
-			border:1px solid gray;
-			padding:10px 5px;
-			font-size:14px;
-		}
-		.privacyCheckBox{
-			font-size:16px;
-			text-align: center;
-			margin-top:10px;
-		}
-		.closeBtn{
-			width:100%;
-			text-align: center;
-		}
-		.closeBtn > span{
-			font-size:15px;
-			cursor: pointer;
-		}
-		.footer{
-			width:100%;
-			background: #3e3e3e;
-		}
+		width:100%;
+		height:100%;
+	}
+	.mainBanner{
+		width:100%;
+		height:100%;
+	}
+	.mainBanner div{
+		height:100%;
+	}
+	.mainBanner div img{
+		width:100%;
+		height:100%;
+	}
+	.slick-prev:before, .slick-next:before{
+		font-size:40px !important;
+	}
+	.slick-next{
+		right:10px !important;
+	}
+	.slick-prev{
+		left:10px !important;
+	}
+	.slick-dotted.slick-slider{
+		margin-bottom:0 !important;
+	}
+	.sectionDiv{
+		width:100%;
+	}
+	.section01Div{
+		width:100%;
+	}
+	.section01Div > img{
+		width:100%;
+	}
+	.section02Div{
+		width:100%;
+	}
+	.section02Div > img{
+		width:100%;
+	}
+	.section03Div{
+		width:100%;
+		background: url("${pageContext.request.contextPath}/resources/images/pc_section03_background.jpg") no-repeat;
+		background-size:cover;
+	}
+	.section03Div > img{
+		width:100%;
+	}
+	.section04Div{
+		width:100%;
+		background: #eaeaea;
+	}
+	.section04Div > img{
+		width:100%;
+	}
+	.section05Div{
+		width:100%;
+	}
+	#map{
+		width:100%;
+		height:350px !important;
+	}
+	.section05Div > img{
+		width:100%;
+	}
+	.section06Div{
+		width:100%;
+		background: url("${pageContext.request.contextPath}/resources/images/tablet_section06_background.jpg") no-repeat;
+		background-size: cover;
+	}
+	.section06Div > img{
+		width:100%;
+	}
+	.formWrap{
+		width:95%;
+		height:580px; 
+		margin:0 auto;
+		border:4px solid #80a45b;
+		background:#fff;
+		position: relative;
+		margin-bottom:10px;
+	}
+	.formWrap > h1{
+		width:100%;
+		color:#fff;
+		background: #80a45b;
+		text-align: center;
+		padding:10px 0;
+		font-size:28px;
+	}
+	#f1{
+		width:100%;
+	}
+	#f1 > table{
+		width:100%;
+		margin:0 auto;
+	}
+	#f1 > table tr{
+		width:100%;
+		height:20px;
+		border-bottom:1px solid lightgray;
+	}
+	#f1 > table tr th{
+		font-size:18px;
+		font-weight: bold;
+		text-align: left;
+		padding:10px;
+		padding-left:20px;
+		width:30%; 
+		background: #fafafa;
+	}
+	#f1 > table tr td{
+		padding:10px;
+	}
+	#f1 > table tr td >input:not(.chkbox){
+		width:90%;
+		height:20px;
+		font-size:15px; 
+	}
+	.chkboxWrap{
+		font-size:18px;
+	}
+	.chkbox{
+		width:15px;
+	}
+	.chkbox:last-child{
+		margin-left:15px;
+	}
+	#f1 > table tr td > textarea{
+		width:90%;
+		height:180px;
+		font-size:15px;
+	}
+	#submitBtn{
+		display:block;
+		width:120px;
+		margin:0 auto;
+		margin-top:20px;
+		padding:5px;
+		font-size:20px;
+		color:#fff;
+		background: #80a45b;
+		border-radius: 5px;
+		border-style: none;
+	}
+	.privacyPolicy{
+		width:100%;
+		margin-top:15px;
+	}
+	.privacyPolicy > p{
+		text-align: right;
+		border-bottom:1px solid gray;
+		padding:10px;
+	}
+	.privacyPolicy > p > span{
+		font-size:17px;
+		cursor:pointer;
+	}
+	.privacyPolicy > p > span:hover{
+		font-weight: bold;
+	}
+	.yakkwan{
+		display:none;
+		background: #fff;
+		padding:15px 10px;
+		position: absolute;
+		top:0;
+		left:0;
+		border:1px solid lightgray;
+	}
+	.privacy_txt{
+		width:95%;
+		height:150px;
+		overflow:scroll;
+		margin:15px auto;
+		border:1px solid gray;
+		padding:10px 5px;
+		font-size:14px;
+	}
+	.privacyCheckBox{
+		font-size:16px;
+		text-align: center;
+		margin-top:10px;
+	}
+	.closeBtn{
+		width:100%;
+		text-align: center;
+	}
+	.closeBtn > span{
+		font-size:15px;
+		cursor: pointer;
+	}
+	.footer{
+		width:100%;
+		background: #3e3e3e;
+	}
 }
 @media only screen and (min-width:768px) and (max-width:1024px){
 	@media only screen and (orientation:portrait){
