@@ -20,6 +20,19 @@
 	.tablet_img, .pc_img{
 		display:none;
 	}
+	#main{
+		position: relative;
+	}
+	.blogIcon{
+		width:70px;
+		position: fixed;
+		bottom:50px;
+		right:0px;
+		z-index: 7;
+	}
+	.blogIcon > img{
+		width:100%;
+	}
 	header{
 		width:100%;
 		position: fixed;
@@ -109,7 +122,7 @@
 	}
 	.formWrap{
 		width:95%;
-		height:580px; 
+		height:550px; 
 		margin:0 auto;
 		border:4px solid #80a45b;
 		background:#fff;
@@ -236,6 +249,19 @@
 		input,button {border-radius:0;-webkit-appearance:none}
 		.pc_img, .mobile_img{
 			display:none;
+		}
+		#main{
+			position: relative;
+		}
+		.blogIcon{
+			width:100px;
+			position: fixed;
+			bottom:50px;
+			right:20px;
+			z-index: 9;
+		}
+		.blogIcon > img{
+			width:100%;
 		}
 		header{
 			width:100%;
@@ -442,6 +468,19 @@
 		.tablet_img, .mobile_img{
 			display:none;
 		}
+		#main{
+			position: relative;
+		}
+		.blogIcon{
+			width:100px;
+			position: fixed;
+			bottom:50px;
+			right:20px;
+			z-index: 9;
+		}
+		.blogIcon > img{
+			width:100%;
+		}
 		header{
 			width:100%;
 			position: fixed;
@@ -524,10 +563,12 @@
 			height:100%;
 			background: #eaeaea;
 			position: relative;
+			background: url("${pageContext.request.contextPath}/resources/images/pc_section04_bg_test1.jpg") no-repeat;
+			background-size: cover;
 		}
 		.section04Div > img{
 			position:absolute;
-			width:95%;
+			width:100%;
 			margin: auto;
 			top:0;
 			bottom:0;
@@ -688,6 +729,19 @@
 	.tablet_img, .mobile_img{
 		display:none !important;
 	}
+	#main{
+		position: relative;
+	}
+	.blogIcon{
+		width:100px;
+		position: fixed;
+		bottom:10px;
+		right:20px;
+		z-index: 9;
+	}
+	.blogIcon > img{
+		width:100%;
+	}
 	header{
 		width:100%;
 		position: fixed;
@@ -715,6 +769,12 @@
 	.mainBanner div img{
 		width:100%;
 		height:100%;
+	}
+	.slick-prev, .slick-next{
+		height:60px !important;
+	}
+	.slick-prev:before, .slick-next:before{
+		padding-top:5px;
 	}
 	.sectionDiv{
 		width:100%;
@@ -770,19 +830,20 @@
 	.section04Div{
 		width:100%;
 		height:100%;
-		background: #eaeaea;
+		background: url("${pageContext.request.contextPath}/resources/images/pc_section04_bg_test1.jpg") no-repeat;
+		background-size: cover;
 		position: relative;
 	}
 	.section04Div > img{
 		position:absolute;
-		width:80%;
+		width:85%;
 		margin: auto;
-		top:0;
+		top:-2%;
 		bottom:0;
 		left:0;
 		right:0;
 	}
-	#map{
+	#map{ 
 		width:100%;
 		height:50%;
 	}
@@ -876,6 +937,7 @@
 		background: #80a45b;
 		border-radius: 5px;
 		border-style: none;
+		cursor:pointer; 
 	}
 	.privacyPolicy{
 		width:100%;
@@ -944,11 +1006,7 @@
 			dots:true,
 		});
 		
-		/* $('html').on('scroll touchmove mousewheel', function(event) {
-			event.preventDefault();
-			event.stopPropagation(); 
-			return false;
-		}); */
+		
 		
 		$(".yakkwanShowBtn").click(function(){
 			$(".yakkwan").css("display","block");
@@ -958,19 +1016,42 @@
 		});
 		
 		$("#f1").submit(function(){
-			alert("click");
-			return false;
-		})
+			var name=$("input[name='name']").val();
+			var call=$("input[name='call']").val();
+			var callType="";
+			$("input[name='callType']:checked").each(function(){
+				callType+=$(this).val()+", ";
+			});
+			var content=$("textarea[name='content']").val();
+			var agreement1=$("input[name='privacy']").prop("checked");
+			var agreement2=$("input[name='agreement']").prop("checked");
+			
+			if(name==null || name==""){
+				alert("이름을 입력해주세요.");
+				return false;
+			}
+			if(call==null || call==""){
+				alert("연락처를 입력해주세요.");
+				return false;
+			}
+			if(callType==null || callType==""){
+				alert("연락방법을 선택해주세요.");
+				return false;
+			}
+			if(agreement1==false || agreement2==false){
+				alert("개인정보 수집 및 이용, 개인정보 제공 동의를 하지 않으면 관심고객 등록이 불가능합니다.");
+				return false;
+			}
+		});
 	});
-	
-	
 </script>
 </head>
 <body id="main"><!--  style="overflow-y:hidden" -->
 	<header>
 		<jsp:include page="../include/pcHeaderTest.jsp"></jsp:include>
 	</header>
-	<section>
+	<a class="blogIcon" href="https://blog.naver.com/amiso915"><img src="${pageContext.request.contextPath}/resources/images/blogIcon9.png"></a> 
+	<section> 
 		<div class="mainBannerWrap">
 			<div class="mainBanner pc_img">
 				<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_mainBanner01.jpg">
@@ -989,7 +1070,7 @@
 			</div>
 		</div><!-- mainBannerWrap end -->
 		<div class="sectionDiv section01Div" id="section01Div"><!-- 인사말 -->
-			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section01_test.jpg">
+			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section01.jpg">
 			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section01.jpg">
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section01.jpg">
 		</div><!-- section01Div end -->
@@ -1004,9 +1085,9 @@
 			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section03.jpg">
 		</div><!-- section03Div end -->
 		<div class="sectionDiv section04Div" id="section04Div"><!-- 분양안내 -->
-			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section04.jpg">
-			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section04.jpg">
-			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section04.jpg">
+			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section04_test3.png">
+			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section04_test1.jpg">
+			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section04_test1.jpg">
 		</div><!-- section04Div end -->
 		<div class="sectionDiv section05Div" id="section05Div"><!-- 오시는길 -->
 			<div id="map" style="width:100%;height:50%;"></div>

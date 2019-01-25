@@ -146,8 +146,6 @@
 	.menuWrap2 > a > img{
 		width:100%;
 	}
-	
-
 }
 </style>
 <script> 

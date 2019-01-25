@@ -77,8 +77,8 @@ public class HomeController {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			String PwMeg = "작성자:" + vo.getName() + "<br>" + "연락처:" + vo.getCall() + "<br>" + "연락방법:" + vo.getCallType()
-					+ "<br>" + "문의내용:" + vo.getContent();
+			String PwMeg = "작성자 :&nbsp;" + vo.getName() + "<br>" + "연락처 :&nbsp;" + vo.getCall() + "<br>" + "연락방법 :&nbsp;" + vo.getCallType()
+					+ "<br>" + "문의내용 :&nbsp;" + vo.getContent();
 
 			// Text/Project_JSP/img/login/login.gif
 			message.setText(PwMeg, "UTF-8");
