@@ -191,6 +191,7 @@
 		background: #80a45b;
 		border-radius: 5px;
 		border-style: none;
+		-webkit-appearance:none;
 	}
 	.privacyPolicy{
 		width:100%;
@@ -410,6 +411,7 @@
 			background: #80a45b;
 			border-radius: 5px;
 			border-style: none;
+			-webkit-appearance:none;
 		}
 		.privacyPolicy{
 			width:100%;
@@ -671,6 +673,7 @@
 			background: #80a45b;
 			border-radius: 5px;
 			border-style: none;
+			-webkit-appearance:none;
 		}
 		.privacyPolicy{
 			width:100%;
@@ -1086,8 +1089,8 @@
 		</div><!-- section03Div end -->
 		<div class="sectionDiv section04Div" id="section04Div"><!-- 분양안내 -->
 			<img class="pc_img" src="${pageContext.request.contextPath}/resources/images/pc_section04_test3.png">
-			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section04_test1.jpg">
-			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section04_test1.jpg">
+			<img class="tablet_img" src="${pageContext.request.contextPath}/resources/images/tablet_section04_test2.jpg">
+			<img class="mobile_img" src="${pageContext.request.contextPath}/resources/images/mobile_section04_test3.jpg">
 		</div><!-- section04Div end -->
 		<div class="sectionDiv section05Div" id="section05Div"><!-- 오시는길 -->
 			<div id="map" style="width:100%;height:50%;"></div>
