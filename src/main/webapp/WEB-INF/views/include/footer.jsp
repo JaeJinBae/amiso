@@ -22,7 +22,7 @@
 	}
 	.rightFInfo > p{
 		color: #f1f1f1;
-		font-size:13px;
+		font-size:12px;
 	}
 	.rightFInfo > p:nth-child(3){
 		letter-spacing: -1px;
@@ -82,9 +82,9 @@
 		<img src="${pageContext.request.contextPath}/resources/images/bottomLogo.png">
 	</div>
 	<div class="rightFInfo">
-		<p>상호 : 주식회사 아미소 / 사업자등록번호 : 123-12-12345</p>
-		<p>대표 :  구정모/ 전화 : 053-764-1748 / 이메일 : amiso915@naver.com</p>
-		<p>소재지 : 대구광역시 수성구 달구벌대로 2616-5, 302호(만촌동, 성화빌딩)</p>
+		<p>상호 : 주식회사 아미소 / 사업자등록번호 : 376-87-00247</p>
+		<p>대표 :  김성미 / 전화 : 053-764-1748 / 이메일 : amiso915@naver.com</p>
+		<p>소재지 : 대구광역시 수성구 범어동 64-6(청호로 92길 2)</p>
 		<p>CopyrightⓒAMISO.Co.,Ltd. All Rights Reserved.</p>
 	</div>
 </div>

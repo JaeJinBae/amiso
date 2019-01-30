@@ -46,8 +46,8 @@ public class HomeController {
 	private void SendEmail(MailVO vo) {
 		logger.info("sendmail 진입");
 		String host = "smtp.naver.com";
-		String user = "bjj7425";
-		String password = "qowowls7425!";
+		String user = "amiso915";
+		String password = "bigstep915!!";
 		int port=465;
 		
 		Properties props = new Properties();
@@ -67,7 +67,7 @@ public class HomeController {
 		try {
 			MimeMessage message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(user));
-			message.addRecipient(Message.RecipientType.TO, new InternetAddress("bjj7425@naver.com"));
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress("amiso915@naver.com"));
 
 			// Subject
 			String subject = "아미소 관심고객등록 신청입니다.";
