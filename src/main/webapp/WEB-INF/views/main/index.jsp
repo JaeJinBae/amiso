@@ -8,6 +8,14 @@
 <head>
 <meta charset="UTF-8">
 <title>아미소</title>
+<meta name="naver-site-verification" content="d53046e7ecfe442e3b973c1baeb37ec7fc75031d"/>
+<meta name="description" content="수익형 아파트분양, 할인분양, 최소투자, 손실제로 재테크, 시세차익, 전국투자">
+<meta property="og:type" content="website">
+<meta property="og:title" content="아미소">
+<meta property="og:description" content="수익형 아파트분양, 할인분양, 최소투자, 손실제로 재테크, 시세차익, 전국투자">
+<meta property="og:image" content="http://www.amiso820.com/logo.png">
+<meta property="og:url" content="http://www.amiso820.com">
+<link rel="canonical" href="http://www.amiso820.com/">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css"/>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css"/>
