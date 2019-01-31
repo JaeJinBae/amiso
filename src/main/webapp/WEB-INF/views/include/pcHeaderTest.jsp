@@ -126,7 +126,7 @@
 	}
 	.mainHeaderUl > li{
 		float:left;
-		margin:0 33px;
+		margin:0 32px;
 	}
 	.mainHeaderUl > li > a{
 		font-size:20px;

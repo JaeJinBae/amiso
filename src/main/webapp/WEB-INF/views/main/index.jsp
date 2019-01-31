@@ -1059,7 +1059,7 @@
 </head>
 <body id="main"><!--  style="overflow-y:hidden" -->
 	<header>
-		<jsp:include page="../include/pcHeaderTest.jsp"></jsp:include>
+		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
 	</header>
 	<a class="blogIcon" href="https://blog.naver.com/amiso915"><img src="${pageContext.request.contextPath}/resources/images/blogIcon9.png"></a> 
 	<section> 
@@ -1105,14 +1105,14 @@
 			<script>
 				var container = document.getElementById('map');
 				var options = {
-					center: new daum.maps.LatLng(35.857336, 128.648319),
+					center: new daum.maps.LatLng(35.856594, 128.642618),
 					level: 2
 				};
 		
 				var map = new daum.maps.Map(container, options);
 				
 				// 마커가 표시될 위치입니다 
-				var markerPosition  = new daum.maps.LatLng(35.857336, 128.648319); 
+				var markerPosition  = new daum.maps.LatLng(35.856594, 128.642618); 
 
 				// 마커를 생성합니다
 				var marker = new daum.maps.Marker({
