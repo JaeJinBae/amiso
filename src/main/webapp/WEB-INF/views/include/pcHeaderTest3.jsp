@@ -119,7 +119,7 @@
 	}
 	.mainMenu:not(.menuWrap2){
 		margin-top:117px;
-		width:450px;
+		width:430px;
 	}
 	.mainHeaderUl{
 		width:100%;
@@ -149,11 +149,13 @@
 	}
 	.menuWrap1 > ul > li{
 		float:left;
-		padding-right:53px;
+		margin-right:60px;
+		display:inline;
 	}
 	.menuWrap3 > ul > li{
 		float:right;
-		padding-left:53px;
+		margin-left:60px;
+		display:inline;
 	}
 }
 </style>
